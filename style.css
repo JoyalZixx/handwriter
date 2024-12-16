@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f0f0f0;
+  font-family: sue;
+}
+#a4sheet {
+  width: 595px; /* A4 width at 72 DPI */
+  height: 842px; /* A4 height at 72 DPI */
+  padding: 40px;
+  background: white;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+  overflow-wrap: break-word;
+}
+
+@font-face {
+    font-family: sue;
+    src: url(Sue_Ellen_Francisco/SueEllenFrancisco-Regular.ttf);
+}
