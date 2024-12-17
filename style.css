@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background: #f0f0f0;
-  font-family: sue;
+  font-family: myfont1;
 }
 #a4sheet {
   width: 595px; /* A4 width at 72 DPI */
@@ -21,5 +21,10 @@ body {
 
 @font-face {
     font-family: sue;
-    src: url(Sue_Ellen_Francisco/SueEllenFrancisco-Regular.ttf);
+    src: url(Fonts/SueEllenFrancisco-Regular.ttf);
+}
+
+@font-face {
+  font-family: myfont1;
+  src: url(Fonts/Myfont-Regular.ttf);
 }

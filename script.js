@@ -1,6 +1,8 @@
+let font = document.getElementById('fontSelection').value;
+
 document.getElementById('download').addEventListener('click', () => {
     const a4sheet = document.getElementById('a4sheet');
-  
+
     html2canvas(a4sheet, {
       backgroundColor: 'white',
       scale: 2 // Render at higher resolution for better quality
@@ -56,3 +58,12 @@ document.getElementById('download').addEventListener('click', () => {
         a4sheet1.innerHTML = document.getElementById('inputText').value;
 
   });
+
+  document.getElementById('fontSelection').addEventListener('change', () => {
+    let font = document.getElementById('fontSelection').value;
+    if (font === '1') {
+      document.querySelector('body').style.fontFamily = 'myfont1';
+    } else {
+      document.querySelector('body').style.fontFamily = 'sue';
+    };
+});
