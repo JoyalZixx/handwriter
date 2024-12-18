@@ -10,16 +10,23 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-    <input type="text" id="inputText" placeholder="Type Here">
-    <label for="Fonts"></label>
-    <select name="Fonts" id="fontSelection">
-        <option value="1">1</option>
-        <option value="sue ellen francisco">2</option>
-    </select>
+    <div id="inputContainer" style="display: flex; flex-direction: column; margin: 10px; gap: 10px;">
+        <input type="text" id="inputText" placeholder="Type Here">
+        <div>
+            <label for="Fonts" style="font-family: sans-serif; font-size: 14px;">Fonts:</label>
+            <select name="Fonts" id="fontSelection">
+                <option value="1">1</option>
+                <option value="sue ellen francisco">2</option>
+            </select>
+        </div>
+        <!-- <label for="fontSize">font size</label> -->
+        <input type="number" placeholder="Font Size" name="font size input" id="fontSize">
+    </div>
     <div id="a4sheet">
         <p>Dear Reader, <br>
             type with html tags for H1 or br for new line, etc...
-            <br> will add more fonts in the future.
+            <br> will add more fonts in the future. <br>
+            if you are using a phone, it will work perfectly in landescape mode.
         </p>
     </div>
     <button id="download">Save as JPEG</button>

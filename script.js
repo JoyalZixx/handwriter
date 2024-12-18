@@ -47,16 +47,15 @@ document.getElementById('download').addEventListener('click', () => {
   
       // Save the final image
       const link = document.createElement('a');
-      link.href = canvas.toDataURL('image/jpeg', 0.95); // High-quality JPEG
+      link.href = canvas.toDataURL('image/jpeg', 0.95); // High-quality JPEG 
       link.download = 'a4-scanned.jpeg';
       link.click();
     });
   });
   
   document.getElementById('inputText').addEventListener('input', () => {
-        const a4sheet1 = document.getElementById('a4sheet');
-        a4sheet1.innerHTML = document.getElementById('inputText').value;
-
+    const a4sheet1 = document.getElementById('a4sheet');
+    a4sheet1.innerHTML = document.getElementById('inputText').value;
   });
 
   document.getElementById('fontSelection').addEventListener('change', () => {
@@ -66,4 +65,10 @@ document.getElementById('download').addEventListener('click', () => {
     } else {
       document.querySelector('body').style.fontFamily = 'sue';
     };
+});
+
+  document.getElementById('fontSize').addEventListener('input', () => {
+    let fontSizes = document.getElementById('fontSize').value;
+    document.getElementById('a4sheet').style.fontSize = fontSizes + 'px';
+
 });

@@ -8,8 +8,8 @@ body {
   font-family: myfont1;
 }
 #a4sheet {
-  width: 595px; /* A4 width at 72 DPI */
-  height: 842px; /* A4 height at 72 DPI */
+  width: 595px; 
+  height: 842px;
   padding: 40px;
   background: white;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -27,4 +27,18 @@ body {
 @font-face {
   font-family: myfont1;
   src: url(Fonts/Myfont-Regular.ttf);
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #a4sheet {
+    width: 297.5px; 
+    height: 421px;
+    padding: 40px;
+    margin-left: 100px;
+  }
 }
