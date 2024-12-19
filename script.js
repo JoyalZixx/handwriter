@@ -60,11 +60,16 @@ document.getElementById('download').addEventListener('click', () => {
 
   document.getElementById('fontSelection').addEventListener('change', () => {
     let font = document.getElementById('fontSelection').value;
-    if (font === '1') {
-      document.querySelector('body').style.fontFamily = 'myfont1';
-    } else {
-      document.querySelector('body').style.fontFamily = 'sue';
-    };
+    switch (font) {
+      case '1':
+        document.querySelector('body').style.fontFamily = 'myfont1';
+        break;
+      case '2':
+        document.querySelector('body').style.fontFamily = 'sue';
+        break;
+      default:
+        document.querySelector('body').style.fontFamily = 'abdullahfont';
+    }
 });
 
   document.getElementById('fontSize').addEventListener('input', () => {

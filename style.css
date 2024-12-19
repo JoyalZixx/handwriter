@@ -26,7 +26,12 @@ body {
 
 @font-face {
   font-family: myfont1;
-  src: url(Fonts/Myfont-Regular.ttf);
+  src: url(Fonts/Myfont1-Regular.ttf);
+}
+
+@font-face {
+  font-family: abdullahfont;
+  src: url(Fonts/Abdfont1-Regular.ttf);
 }
 
 @media (max-width: 480px) {
